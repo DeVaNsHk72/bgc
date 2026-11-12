@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BGC</title>
+<meta name="description" content="BGC is four friends from Bengaluru. We make humanity and people's lives better.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-14 -5 119 110'%3E%3Cg fill='%230E0E10'%3E%3Crect x='0' y='34' width='10' height='66'/%3E%3Ccircle cx='5' cy='21.5' r='6.2'/%3E%3Crect x='27' y='29.4' width='10' height='70.6'/%3E%3Ccircle cx='32' cy='16.9' r='6.2'/%3E%3Crect x='54' y='34' width='10' height='66'/%3E%3Ccircle cx='59' cy='21.5' r='6.2'/%3E%3Crect x='81' y='37.3' width='10' height='62.7'/%3E%3Ccircle cx='86' cy='24.8' r='6.2'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root { --paper: #F2F0EB; --ink: #0E0E10; --quiet: #77757A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #0E0E10; --ink: #F2F0EB; --quiet: #8A8A8E; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { background: var(--paper); color: var(--ink); -webkit-text-size-adjust: 100%; }
+  body {
+    min-height: 100vh; min-height: 100svh;
+    display: grid; grid-template-rows: auto 1fr auto;
+    padding: clamp(24px, 4vw, 48px);
+    font-family: Baskerville, "Libre Baskerville", "Baskerville Old Face", Georgia, serif;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  }
+  header svg { display: block; height: 32px; width: auto; fill: currentColor; }
+  main { align-self: center; max-width: 21em; padding: 64px 0; font-size: clamp(30px, 4.6vw, 64px); line-height: 1.16; letter-spacing: -0.012em; }
+  h1 { font: inherit; }
+  p { margin-top: 0.6em; }
+  em { font-style: italic; }
+  footer { display: flex; justify-content: space-between; gap: 16px; font-size: 14px; letter-spacing: 0.02em; color: var(--quiet); }
+  header, h1, p, footer { animation: rise 240ms ease-out both; }
+  p { animation-delay: 80ms; } footer { animation-delay: 160ms; }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } }
+  @media (prefers-reduced-motion: reduce) { header, h1, p, footer { animation: none; } }
+</style>
+</head>
+<body>
+  <header>
+    <svg viewBox="0 0 91 100" role="img" aria-label="BGC">
+      <rect x="0" y="34" width="10" height="66"/><circle cx="5" cy="21.5" r="6.2"/>
+      <rect x="27" y="29.4" width="10" height="70.6"/><circle cx="32" cy="16.9" r="6.2"/>
+      <rect x="54" y="34" width="10" height="66"/><circle cx="59" cy="21.5" r="6.2"/>
+      <rect x="81" y="37.3" width="10" height="62.7"/><circle cx="86" cy="24.8" r="6.2"/>
+    </svg>
+  </header>
+
+  <main>
+    <h1>BGC,</h1>
+    <p>is four friends from Bengaluru. We make humanity and people&rsquo;s lives better. We care about the work, and <em>who it is for.</em></p>
+  </main>
+
+  <footer>
+    <span>BGC</span>
+    <span>Bengaluru</span>
+  </footer>
+</body>
+</html>
